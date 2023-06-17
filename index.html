@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spin Wheel App</title>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <section class="container">
+    <div class="chart">
+      <div id="chart"></div>
+      <button id="clickSpin">جرب الان</button>
+    </div>
+    <div class="text">
+      <p>كل عام وأنتم بخير</p>
+      <h1>تفضل عيديتك</h1>
+      <p>عيدكم مبارك</p>
+      <div class="logo">
+        <img src="./images/logo.svg" alt="logo">
+      </div>
+    </div>
+  </section>
+  <!-- Modal -->
+  <div class="modal" id="resultModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal header -->
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <audio id="modalSound" src="./sound.mp3"></audio>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p id="resultText"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./libs/d3.js" charset="utf-8"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
